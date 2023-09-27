@@ -21,5 +21,10 @@ class Project extends Model
     public function type(){
         return $this->belongsTo(Type::class);
     }
+
+    public function contributors()
+    {
+        return $this->belongsToMany(Contributor::class);
+    }
     use HasFactory;
 }
