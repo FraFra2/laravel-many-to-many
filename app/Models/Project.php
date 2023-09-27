@@ -24,7 +24,7 @@ class Project extends Model
 
     public function contributors()
     {
-        return $this->belongsToMany(Contributor::class);
+        return $this->belongsToMany(Contributor::class, 'project_contributor', 'project_id', 'contributor_id');
     }
     use HasFactory;
 }

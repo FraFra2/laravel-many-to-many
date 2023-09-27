@@ -27,6 +27,9 @@
                         <h4>
                             Type: <span class = "text-xl">{{ $project->type->name }}</span> 
                         </h4>
+                        <h4>
+                            Contributors: <span class = "text-xl">{{ $project->contributors }}</span> 
+                        </h4>
                         <h4s>
                             Languages: {{ $project->languages }}
                         </h4s>
